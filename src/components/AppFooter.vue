@@ -116,14 +116,34 @@ export default {
             <div class = "bg">
             </div>
         </div>
-        
     </footer>
+    <div class = "wrapper bg-black">
+        <div class="w-80 flex  min-h-200">
+            <div class = "pd-20">
+            <span class="btn-classic">SIGN-UP NOW!</span>
+        </div>
+        <div class = "flex">
+            <a><img src="../assets/img/footer-periscope.png"></a>
+            <a><img src="../assets/img/footer-facebook.png"></a>
+            <a><img src="../assets/img/footer-pinterest.png"></a>
+            <a><img src="../assets/img/footer-youtube.png"></a>
+            <a><img src="../assets/img/footer-twitter.png"></a>
+        </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partials/_mixins" as *;
 @use "../style/partials/_variables" as *;
 @import '../style/generals.scss';
+.bg-black{
+    background-color : $footer_color;
+}
+.flex{
+    @include flex(row, space-between, center);
+    gap : 10px;
+}
 
 footer{
     background-image : url('../assets/img/footer-bg.jpg');
