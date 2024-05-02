@@ -52,6 +52,7 @@ export default {
 
 <template>
     <header>
+        <!-- Aggiungere nel refactoring w-80 e pd-20 -->
       <div class="header-logo">
         <img
           src="../assets/img/dc-logo.png"
@@ -66,6 +67,7 @@ export default {
   </template>
 
 <style lang="scss" scoped>
+/* Includere import generals.scss */
 @use "../style/partials/_mixins" as *;
 @use "../style/partials/_variables" as *;
 
@@ -74,8 +76,7 @@ header {
     background-color : $header_color;
     width : 80%;
     margin : 0 auto;
-    padding : 10px;
-    margin-top : 10px;
+    padding : 20px;
         ul{
             display : flex;
             gap : 1rem;
