@@ -13,7 +13,7 @@ export default {
                     desc : "DC MERCHANDISE"
                 },
                 {
-                    icon : "subscription.png",
+                    icon : "subscriptions.png",
                     desc : "SUBSCRIPTION"
                 },
                 {
