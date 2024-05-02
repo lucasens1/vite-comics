@@ -59,10 +59,45 @@ export default {
         />
       </div>
       <ul>
-        <li v-for = "item in menu_items">{{item.title}}</li>
+        <li v-for = "item in menu_items" :class="{ active : item.activeFlag }">
+            <a href = "#" :class="{ active : item.activeFlag }">{{item.title}}</a></li>
       </ul>
     </header>
   </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/_mixins" as *;
+@use "../style/partials/_variables" as *;
+
+header {
+    @include flex(row, space-between, center);
+    background-color : $header_color;
+    width : 80%;
+    margin : 0 auto;
+    padding : 10px;
+    margin-top : 10px;
+        ul{
+            display : flex;
+            gap : 1rem;
+            li{
+               list-style-type : none;
+               padding : 8px 8px;
+
+               &.active {
+                border-bottom : 2px solid $primary_blue;
+               }
+
+               a{
+                text-decoration : none;
+                color : black;
+                display : inline-block;
+
+                &.active {
+                    color : $primary_blue;
+                }
+               }
+            }
+        }
+}
+
 </style>

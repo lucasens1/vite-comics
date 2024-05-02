@@ -13,15 +13,19 @@
 </script>
 
 <template>
-
-  <!-- Header -->
-  <AppHeader />
-  <!-- Main -->
-  <AppMain />
-  <!-- Footer -->
-  <AppFooter />
-
+  <div class = "wrapper">
+    <!-- Header -->
+    <AppHeader />
+    <!-- Main -->
+    <AppMain />
+    <!-- Footer -->
+    <AppFooter />
+  </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
+.wrapper{
+  width : 100%;
+  margin : 0 auto;
+}
 </style>
