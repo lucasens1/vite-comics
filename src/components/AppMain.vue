@@ -2,10 +2,13 @@
 </script>
 
 <template>
-    <div class="wrapper bg-black">
-        <div class = "w-80">
-            Content here
-        </div> 
+    <div class="bg-black jumbotron">
+        <div>
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </div>
+    </div>
+    <div class="cards w-80">
+
     </div>
 </template>
 
@@ -15,8 +18,15 @@
 .bg-black {
     background-color : black;
     width : 100%;
-    height : 100px;
     color : white;
 }
 
+.jumbotron{
+    height: 450px;
+    img{
+        max-height: 450px;
+        width: 100%;
+        object-fit: fill;
+    }
+}
 </style>
