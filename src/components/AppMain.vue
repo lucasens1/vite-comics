@@ -24,12 +24,12 @@ export default {
     </div>
     <section class="comics-section">
         <div class="row">
-          <div class="col" v-for="comics in arrayDC">
-            <AppCard
-              :img ="comics.thumb"
-              :name ="comics.series"
-              :altext ="comics.type"
-            />
+          <div class="col" v-for="comic in comics">
+              <AppCard
+                :img ="comic.thumb"
+                :name ="comic.series"
+                :altext ="comic.type"
+              />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default {
     @include flex(row, space-between, stretch);
     flex-wrap: wrap;
     .col {
-      width: 30%;
+      width: calc(100% / 6);
       margin-bottom: 1.5rem;
     }
   }
