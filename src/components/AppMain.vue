@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div class="bg-black jumbotron">
+    <div class="bg-fix jumbotron">
         <div>
             <img src="../assets/img/jumbotron.jpg" alt="">
         </div>
@@ -43,12 +43,12 @@ export default {
 
 
 
-.bg-black {
+.bg-fix {
     background-color : black;
     width : 100%;
     color : white;
 }
-
+/* Jumbo */
 .jumbotron{
     height: 450px;
     img{
@@ -57,19 +57,17 @@ export default {
         object-fit: fill;
     }
 }
-
-
+/* Comics Section */
 .comics-section {
   margin-top: 2rem;
   padding: 3rem 3rem;
-
   @include flex(column, center, center);
-
   .row {
     @include flex(row, space-between, stretch);
+    gap : 10px;
     flex-wrap: wrap;
     .col {
-      width: calc(100% / 6);
+      width: calc(100% / 6 - 10px);
       margin-bottom: 1.5rem;
     }
   }

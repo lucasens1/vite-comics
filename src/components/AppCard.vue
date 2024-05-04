@@ -20,9 +20,14 @@ export default{
   background-color: white;
   padding: 1rem;
   text-align: center;
-
+  border: 3px solid black;
+  height : 100%;
   img {
     max-width: 100%;
+    height: 80%;
+  }
+  h6 {
+    margin-top : 1rem;
   }
 }
 </style>
