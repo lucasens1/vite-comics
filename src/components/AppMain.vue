@@ -50,9 +50,12 @@ export default {
 }
 /* Jumbo */
 .jumbotron{
-    height: 450px;
+    height: 400px;
+    div{
+        height : inherit;
+    }
     img{
-        max-height: 450px;
+        height : 100%;
         width: 100%;
         object-fit: fill;
     }
